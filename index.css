@@ -450,7 +450,7 @@ body {
 .contenedor-nos-especializamos-en-estas-marcas img {
   width: 50%;
   position: relative;
-  left: 20px;
+left: -126px;
   border-radius: 130px;
 }
 
@@ -458,7 +458,7 @@ body {
   text-align: center;
   justify-content: center;
   position: relative;
-  left: -114px;
+ left: 24px;
   top: -20px;
   margin-top: 20px;
   color: white;
