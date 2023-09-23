@@ -458,8 +458,8 @@ left: 20px;
   text-align: center;
   justify-content: center;
   position: relative;
- left: 24px;
-  top: -112px;
+ left: -112px;
+  top: -10px;
   margin-top: 20px;
   color: white;
 }
