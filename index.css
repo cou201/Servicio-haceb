@@ -373,7 +373,7 @@ body {
   transition: all 1s;
   overflow: hidden;
   cursor: pointer;
-  z-index: 999;
+  z-index: 99;
   margin-top: 20px;
 }
 .boton-whatsapp-contacto a {
