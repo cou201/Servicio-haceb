@@ -534,9 +534,25 @@ body {
 }
 
 .contenedor-imagenes-textos-sevicios-primero img {
-  width: 80%;
+  width: 40%;
+}
+#estufa-cambio-tamaño img {
+  width: 70%;
 }
 
+#cambio-posicion-izquierda-primera-seccion {
+  position: relative;
+  left: -50px;
+}
+@media screen and (max-width: 768px) {
+  #cambio-posicion-izquierda-primera-seccion {
+    position: relative;
+    left: -2px;
+  }
+  #estufa-cambio-tamaño img {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 768px) {
   .contenedor-imagenes-textos-sevicios-primero {
     display: flex;
