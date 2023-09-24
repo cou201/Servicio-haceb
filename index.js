@@ -3,28 +3,58 @@ const carruselItems = document.querySelectorAll(".carrusel-item");
 const anteriorBtn = document.getElementById("anterior");
 const siguienteBtn = document.getElementById("siguiente");
 let index = 0;
+let intervalId; // Variable para almacenar el ID del intervalo
 
 siguienteBtn.addEventListener("click", () => {
+  avanzarCarrusel();
+});
+
+anteriorBtn.addEventListener("click", () => {
+  retrocederCarrusel();
+});
+
+// Función para avanzar el carrusel
+function avanzarCarrusel() {
   if (index < carruselItems.length - 1) {
     index++;
   } else {
     index = 0;
   }
   actualizarCarrusel();
-});
+}
 
-anteriorBtn.addEventListener("click", () => {
+// Función para retroceder el carrusel
+function retrocederCarrusel() {
   if (index > 0) {
     index--;
   } else {
     index = carruselItems.length - 1;
   }
   actualizarCarrusel();
-});
+}
 
+// Función para actualizar el carrusel
 function actualizarCarrusel() {
   carrusel.style.transform = `translateX(-${index * 100}%)`;
 }
+
+// Función para iniciar el carrusel automático
+function iniciarCarruselAutomatico() {
+  intervalId = setInterval(avanzarCarrusel, 3000); // Avanzar cada 3 segundos (3000 ms)
+}
+
+// Iniciar el carrusel automático al cargar la página
+iniciarCarruselAutomatico();
+
+// Detener el carrusel automático cuando el mouse está sobre el carrusel
+carrusel.addEventListener("mouseenter", () => {
+  clearInterval(intervalId); // Detener el intervalo
+});
+
+// Reanudar el carrusel automático cuando el mouse sale del carrusel
+carrusel.addEventListener("mouseleave", () => {
+  iniciarCarruselAutomatico(); // Iniciar nuevamente el intervalo
+});
 
 /*scroll*/
 function handleIntersection(entries, observer) {
