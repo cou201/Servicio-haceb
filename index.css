@@ -36,6 +36,13 @@ body {
   .contenedor-logo-nav ul li a {
     font-size: 14px;
   }
+  .logo-navbar img {
+    width: 40% !important;
+  }
+}
+
+.logo-navbar img {
+  width: 10%;
 }
 
 @media screen and (max-width: 858px) {
@@ -94,7 +101,7 @@ body {
 }
 
 .contenedor-logo-nav {
-  background: black;
+  background: #e2e2e2;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -103,11 +110,17 @@ body {
   top: 0px;
 }
 .logo-navbar {
-  color: white;
+  color: #adcd00;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .logo-navbar {
+    padding: 0 25px;
+    line-height: 59px;
+  }
 }
 .contenedor-logo-nav ul {
   float: right;
@@ -121,7 +134,7 @@ body {
 }
 
 .contenedor-logo-nav ul li a {
-  color: white;
+  color: black;
   font-size: 17px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -178,11 +191,12 @@ body {
   .contenedor-imagenes-home img {
     width: 100%;
     margin-bottom: 25px;
+    margin-top: 61px;
   }
 }
 
 .contenedor-de-li-navbar li {
-  color: white;
+  color: black;
 }
 
 /* Banner home */
@@ -434,7 +448,8 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  color: #adcd00;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 .titulo-subtitulo-agenda-cita h2 {
@@ -477,7 +492,7 @@ body {
   font-style: italic;
 }
 .ultima-seccion-home-agenda-cita {
-  background-color: #464749;
+  background-color: #1e1e1e !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -488,4 +503,90 @@ body {
   .contenedor-imagenes-textos-agenda-cita p {
     margin-bottom: 20px !important;
   }
+}
+
+/*Servicios*/
+.contenedor-servicios-haceb h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: italic;
+  color: #4f4f4f;
+}
+
+.contenedor-imagenes-textos-sevicios-primero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contenedor-imagenes-textos-sevicios-primero p {
+  font-size: 18pt;
+  font-weight: 700;
+  color: #605f5f;
+  margin-bottom: 20px;
+}
+
+.contenedor-imagenes-textos-sevicios-primero img {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-imagenes-textos-sevicios-primero {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#separador-servicios-cita {
+  margin-bottom: 60px;
+}
+
+.boton-agenda-cita-whatsapp {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.boton-agenda-cita-whatsapp button {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 3px solid rgb(71, 197, 29);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+  border-radius: 20px;
+}
+.boton-agenda-cita-whatsapp button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: 3px solid rgb(71, 197, 29);
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+.boton-agenda-cita-whatsapp button:hover::before {
+  transform: translateX(0);
+}
+.boton-agenda-cita-whatsapp a {
+  text-decoration: none;
+  color: black;
 }
