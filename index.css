@@ -281,7 +281,7 @@ body {
 /* Contedor textos descriptibos debajo del carrusel */
 
 .contenedor-completo-imagen-y-texto-especializados {
-  background-color: #464749 !important;
+  background-color: #7d7c7c !important;
   height: 530px;
   position: relative;
   top: -60px;
@@ -396,7 +396,7 @@ body {
     font-size: 11px;
     position: relative;
     left: 79px;
-    margin-top: 34px;
+    margin-top: 50px;
     /* margin-bottom: 21px; */
   }
   .texto-sobre-nosotros {
@@ -552,10 +552,16 @@ body {
 }
 
 .contenedor-imagenes-textos-sevicios-primero img {
-  width: 40%;
+  width: 60%;
+  border: solid 1px;
+  border-color: grey;
+  border-radius: 27px;
+  box-shadow: inset 0 38em 12em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 229, 90),
+    -0.7em 1.3em 2em rgba(0, 0, 0, 0.3);
 }
+
 #estufa-cambio-tamaño img {
-  width: 70%;
+  width: 95%;
 }
 
 #cambio-posicion-izquierda-primera-seccion {
@@ -568,7 +574,11 @@ body {
     left: -2px;
   }
   #estufa-cambio-tamaño img {
-    width: 50%;
+    width: 66%;
+  }
+  .contenedor-imagenes-textos-sevicios-primero img {
+    width: 70%;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 768px) {
