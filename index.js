@@ -86,3 +86,50 @@ const elementos = document.querySelectorAll(
 elementos.forEach((elemento) => {
   observador.observe(elemento);
 });
+
+const sliderContainer = document.querySelector(".slider-container");
+const slider = document.querySelector(
+  ".contenedor-necesitas-quieres-instalacion"
+);
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+// Variable para llevar el seguimiento de la imagen actual
+let currentSlide = 0;
+
+// Función para mostrar la diapositiva actual
+function showSlide() {
+  slider.style.transform = `translateX(-${currentSlide * 30}%)`; // Ajusta el 30% según el ancho de las imágenes
+}
+
+// Función para avanzar a la siguiente diapositiva
+function nextSlide() {
+  currentSlide++;
+  if (currentSlide >= 3) {
+    currentSlide = 0;
+  }
+  showSlide();
+}
+
+// Función para retroceder a la diapositiva anterior
+function prevSlide() {
+  currentSlide--;
+  if (currentSlide < 0) {
+    currentSlide = 2;
+  }
+  showSlide();
+}
+
+// Agregar listeners para los botones
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
+
+// Verificar si estamos en un dispositivo móvil (ancho menor a 768px)
+if (window.innerWidth < 768) {
+  // Iniciar el slider en dispositivos móviles
+  showSlide();
+  setInterval(nextSlide, 4000); // Cambiar de diapositiva cada 4 segundos
+} else {
+  // Ocultar el slider en versiones de escritorio
+  sliderContainer.style.display = "none";
+}

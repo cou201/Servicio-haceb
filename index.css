@@ -466,7 +466,7 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  color: #fff;
+  color: 000;
   margin-bottom: 30px;
 }
 
@@ -500,7 +500,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: white;
+  color: black;
 }
 .contenedor-imagenes-textos-agenda-cita h3 {
   color: #adcd00;
@@ -510,7 +510,7 @@ body {
   font-style: italic;
 }
 .ultima-seccion-home-agenda-cita {
-  background-color: #1e1e1e !important;
+  background-color: fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -637,4 +637,24 @@ body {
 
 .contenedor-contactenos-agenda-cita img {
   width: 100%;
+}
+
+/*Requieres, instalacion, ayuda*/
+.contenedor-necesitas-quieres-instalacion {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e4e3e3;
+}
+.contenedor-necesitas-quieres-instalacion img {
+  width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-necesitas-quieres-instalacion img {
+    width: 100%;
+  }
+  .contenedor-necesitas-quieres-instalacion {
+    display: flex;
+    flex-direction: column;
+  }
 }
