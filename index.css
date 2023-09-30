@@ -257,27 +257,77 @@ body {
 /* Boton de whatsapp */
 
 .container-boton-whatsapp img {
-  width: 100%;
+  width: 40%;
+  position: relative;
+  left: 40px;
 }
+
 @media screen and (max-width: 768px) {
   .container-boton-whatsapp img {
-    width: 50px;
+    width: 43px;
     position: relative;
-    left: -40px;
-    top: -20px;
+    left: 27px;
+    top: 3px;
+  }
+  .container-boton-whatsapp {
+    position: fixed;
+    top: 520px !important;
+    left: 74% !important;
+    z-index: 9999;
+    width: 93px !important;
+    display: flex;
+    background-color: rgb(44, 164, 28);
+    border-radius: 15px;
+  }
+  .container-boton-whatsapp p {
+    display: flex;
+    position: relative;
+    left: 6px !important;
+    color: white;
+    font-size: 14px !important;
+    top: -7px;
+  }
+  .container-boton-whatsapp span {
+    display: flex;
+    position: relative;
+    left: 22px !important;
+    color: white;
+    font-size: 14px !important;
+    top: -4px;
+  }
+  #contenedor-telefono {
+    top: 444px !important;
   }
 }
 .container-boton-whatsapp {
   position: fixed;
   top: 600px;
-  left: 96%;
+  left: 92%;
   z-index: 9999;
+  display: flex;
+  background-color: #2ca41c;
+  border-radius: 15px;
 }
-
+.container-boton-whatsapp p {
+  display: flex;
+  position: relative;
+  left: 17px;
+  color: white;
+  top: -7px;
+}
+.container-boton-whatsapp span {
+  display: flex;
+  position: relative;
+  left: 32px;
+  color: white;
+  top: -7px;
+}
 .container-boton-whatsapp:hover {
   transform: scale(1.1);
 }
-
+#contenedor-telefono {
+  top: 510px;
+}
 /* Contedor textos descriptibos debajo del carrusel */
 
 .contenedor-completo-imagen-y-texto-especializados {
@@ -513,7 +563,7 @@ body {
   background-color: fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .contenedor-imagenes-textos-agenda-cita {
     display: flex;
     flex-direction: column !important;
