@@ -462,7 +462,7 @@ body {
     width: 309px;
     font-size: 11px;
     position: absolute;
-    left: 27px;
+    left: 55px;
     margin-top: 50px;
     /* margin-bottom: 21px; */
   }
@@ -471,7 +471,7 @@ body {
   }
   .texto-sobre-nosotros h3 {
     top: 476px !important;
-    left: 87px !important;
+    left: 110px !important;
   }
 }
 @media screen and (max-width: 322px) {
@@ -491,6 +491,25 @@ body {
   .texto-sobre-nosotros h3 {
     top: 476px !important;
     left: 77px !important;
+  }
+}
+@media (max-width: 380px) and (min-width: 330px) {
+  .texto-sobre-nosotros span {
+    color: white;
+    width: 309px;
+    font-size: 11px;
+    position: absolute;
+    left: 28px !important;
+    margin-top: 50px;
+  }
+  .boton-whatsapp-contacto {
+    position: absolute;
+    left: 15px !important;
+    top: -30px;
+  }
+  .texto-sobre-nosotros h3 {
+    top: 476px !important;
+    left: 90px !important;
   }
 }
 /*Boton contactenos*/
@@ -518,7 +537,7 @@ body {
 @media screen and (max-width: 768px) {
   .boton-whatsapp-contacto {
     position: absolute;
-    left: 17px;
+    left: -18px;
     top: -30px;
   }
 }
