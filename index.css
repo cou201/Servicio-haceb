@@ -272,7 +272,7 @@ body {
   .container-boton-whatsapp {
     position: fixed;
     top: 520px !important;
-    left: 75% !important;
+    left: 78% !important;
     z-index: 9999;
     width: 93px !important;
     display: flex;
@@ -504,7 +504,7 @@ body {
   }
   .boton-whatsapp-contacto {
     position: absolute;
-    left: 15px !important;
+    left: -1px !important;
     top: -30px;
   }
   .texto-sobre-nosotros h3 {
@@ -537,7 +537,7 @@ body {
 @media screen and (max-width: 768px) {
   .boton-whatsapp-contacto {
     position: absolute;
-    left: -18px;
+    left: -45px;
     top: -30px;
   }
 }
